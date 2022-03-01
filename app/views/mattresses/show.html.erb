@@ -1,0 +1,11 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @mattress %>
+
+
+<div>
+  <%= link_to "Edit this mattress", edit_mattress_path(@mattress) %> |
+  <%= link_to "Back to mattresses", shop_mattresses_path(@mattress) %>
+
+  <%= button_to "Destroy this mattress", @mattress, method: :delete %>
+</div>
